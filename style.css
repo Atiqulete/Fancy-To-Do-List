@@ -1,0 +1,140 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f0f4f8, #d9e6f2);
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.todo-container {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    font-size: 26px;
+    color: #0078ff;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: #007bff;
+}
+
+button {
+    background: #0078ff;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+button:hover {
+    background: #005ecb;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #ffffff;
+    padding: 12px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    transition: 0.3s;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+li:hover {
+    background: #f0f4f8;
+}
+
+.delete,
+.edit {
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 8px;
+}
+
+.delete {
+    color: #dc3545;
+}
+
+.edit {
+    color: #0078ff;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.7;
+}
+
+.alert {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 14px;
+    display: none;
+}
+
+.priority-label {
+    margin-right: 10px;
+    font-weight: 600;
+    color: #333;
+}
+
+select {
+    padding: 6px 10px;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+}
